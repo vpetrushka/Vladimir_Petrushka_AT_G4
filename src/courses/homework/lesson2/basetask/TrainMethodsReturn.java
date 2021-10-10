@@ -13,52 +13,35 @@ package courses.homework.lesson2.basetask;
 
 public class TrainMethodsReturn {
 
-    private int integerNumber;
-    private long longNumber;
-    private char charDigit;
-    private float floatNumber;
-    private double doubleNumber;
-    private short shortNumber;
-    private byte byteNumber;
-    private boolean booleanValue;
-
     public int returnNewInt(int integerNumber) {
-        this.integerNumber = integerNumber;
         return integerNumber * 3;
     }
 
     public long returnNewLong(long longNumber) {
-        this.longNumber = longNumber;
         return longNumber - 4;
     }
 
     public String returnNewChar(char charDigit) {
-        this.charDigit = charDigit;
         return (charDigit + "" + charDigit);
     }
 
     public float returnNewFloat(float floatNumber){
-        this.floatNumber = floatNumber;
         return floatNumber/2;
     }
 
     public double returnNewDouble(double doubleNumber){
-        this.doubleNumber =doubleNumber;
         return doubleNumber+8;
     }
 
     public short returnNewShort(short shortNumber){
-        this.shortNumber = shortNumber;
         return (short)(shortNumber-1);
     }
 
     public byte returnNewByte(byte byteNumber){
-        this.byteNumber = byteNumber;
         return (byte) (byteNumber*2);
     }
 
     public boolean returnNewBoolean(boolean booleanValue){
-        this.booleanValue = booleanValue;
         return !booleanValue;
     }
 }

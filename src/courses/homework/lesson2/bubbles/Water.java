@@ -8,6 +8,7 @@ public abstract class Water {
     private String smell;
     private int temperature;
 
+
     public Water(String color, String transparency, String smell, int temperature){
 
     }

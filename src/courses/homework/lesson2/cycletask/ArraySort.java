@@ -1,7 +1,5 @@
 package courses.homework.lesson2.cycletask;
 
-import java.util.Arrays;
-
 public class ArraySort extends RandomArray{
 
     public void arraySort(){

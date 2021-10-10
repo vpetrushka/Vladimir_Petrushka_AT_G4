@@ -8,16 +8,15 @@ package courses.homework.lesson2.bubbles;
 
 public class SparklingWater extends  Water{
 
-    private int bubbles;
+    private Bubble[] bubbles;
 
-    public SparklingWater(String color, String transparency, String smell, int temperature, int bubbles ){
+    public SparklingWater(String color, String transparency, String smell, int temperature ){
         super(color,transparency,smell,temperature);
-        this.bubbles = bubbles;
 
     }
 
     public void pump(Bubble[] bubbles){
-
+        this.bubbles = bubbles;
 
 
     }

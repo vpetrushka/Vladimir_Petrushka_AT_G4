@@ -9,17 +9,10 @@ package courses.homework.lesson2.basetask;
 
 public class TrainMethodsIf {
 
-    private int integerNumber;
-    private long longNumber;
-    private char charDigit;
-    private float floatNumber;
-    private double doubleNumber;
-    private boolean booleanValue;
 
     //-- создать метод returnNewInt, который принимает на вход целое число (int) и если оно меньше 8,
 // то возвращает это число умноженное на 7, в противном случае деленное на 4
     public int returnNewInt(int integerNumber){
-        this.integerNumber = integerNumber;
         if (integerNumber < 8){
             integerNumber *= 7;
         }
@@ -30,8 +23,6 @@ public class TrainMethodsIf {
     //-- создать метод returnNewLong, который принимает на вход целое число (long) и если оно больше 300,
 // то возвращает это число минус 300, в противном случае плюс 20
     public long returnNewLong(long longNumber){
-
-        this.longNumber = longNumber;
 
         if (longNumber > 300){
             longNumber -=300;
@@ -45,8 +36,6 @@ public class TrainMethodsIf {
 // то возвращает строку "go", в противном случае строку из этого символа с префиксом "o"
     public String returnNewChar(char charDigit){
 
-        this.charDigit = charDigit;
-
         if (charDigit == 'g' ){
             return "go";
         }
@@ -56,8 +45,6 @@ public class TrainMethodsIf {
     //-- создать метод returnNewFloat, который принимает на вход дробное число (float) и если оно равно 0.67,
 // то возвращает это число, в противном случае число умноженное на 2
     public float returnNewFloat(float floatNumber){
-
-        this.floatNumber = floatNumber;
 
         if (floatNumber == 0.67){
             floatNumber = floatNumber;
@@ -72,14 +59,12 @@ public class TrainMethodsIf {
 
     public double returnNewDouble(double doubleNumber){
 
-        this.doubleNumber = doubleNumber;
-
         if (30 < doubleNumber && doubleNumber < 80){
             return doubleNumber += 87;
         }
 
         if (80 < doubleNumber && doubleNumber < 400){
-            return doubleNumber += 87;
+            return doubleNumber -= 87;
         }
 
         if (doubleNumber > 400 ){
@@ -93,9 +78,8 @@ public class TrainMethodsIf {
 // true то печатает в консоль "Я получил на вход значение истины", в противном случае печатает в консоль "Я получил на вход ложь"
 
     public void returnNewBoolean(boolean booleanValue){
-        this.booleanValue = booleanValue;
 
-        if (booleanValue == true){
+        if (booleanValue){
             System.out.println("Я получил на вход значение истины");
         }
         else

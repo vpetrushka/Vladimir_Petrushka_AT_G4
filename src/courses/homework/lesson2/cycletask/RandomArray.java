@@ -9,6 +9,7 @@ public class RandomArray {
     public int[] getRandomArray() {
 
         int[] createArray = new int[7];
+
         Random random = new Random();
 
         for (int i = 0; i < createArray.length; i++) {

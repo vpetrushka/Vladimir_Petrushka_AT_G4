@@ -8,7 +8,6 @@ package courses.homework.lesson2.basetask;
 
 public class TrainMethodsString {
 
-    private String inputString;
 
     public void printMama(){
         System.out.println("мама мыла раму");
@@ -19,12 +18,10 @@ public class TrainMethodsString {
     }
 
     public void printString(String inputString){
-        this.inputString = inputString;
         System.out.println(inputString);
     }
 
     public void printMamaString(String inputString){
-        this.inputString = inputString;
         System.out.println("мама мыла " + inputString);
     }
 }

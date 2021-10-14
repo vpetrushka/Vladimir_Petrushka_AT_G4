@@ -1,8 +1,8 @@
 package tasks.homework.cycletask;
 
-public class ReturnLowestNumberFromArray extends RandomArray{
+public class ReturnLowestNumberFromArray extends RandomArray {
 
-    public void returnLowestNumberFromArray(){
+    public void returnLowestNumberFromArray() {
 
         int[] randomArray = getRandomArray();
 
@@ -10,7 +10,7 @@ public class ReturnLowestNumberFromArray extends RandomArray{
 
         for (int i = 1; i < randomArray.length; i++) {
 
-            if(randomArray[i] < lowestNumber){
+            if (randomArray[i] < lowestNumber) {
                 lowestNumber = randomArray[i];
             }
 

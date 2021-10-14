@@ -1,5 +1,7 @@
 package projects.runner;
 
+import projects.objects.Bottle;
+
 public class Runner {
 
     public static void main(String[] args) {

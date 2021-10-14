@@ -5,6 +5,8 @@ package projects.objects;
 //- есть вода
 //- есть метод open(), который вызывает метод degas() в газировке
 
+import projects.liquid.Water;
+
 public class Bottle {
 
     private Water water;

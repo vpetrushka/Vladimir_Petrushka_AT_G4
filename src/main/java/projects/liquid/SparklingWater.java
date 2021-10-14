@@ -6,6 +6,8 @@ package projects.liquid;
 //- 1 литр воды содержит 10 тыс пузырьков
 //- у газировки есть метод degas(), который удаляет пузырьки по одному и вызывает их лопанье
 
+import projects.objects.Bubble;
+
 public class SparklingWater extends  Water{
 
     private Bubble[] bubbles;

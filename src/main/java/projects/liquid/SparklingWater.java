@@ -8,21 +8,38 @@ package projects.liquid;
 
 import projects.objects.Bubble;
 
-public class SparklingWater extends  Water{
+public class SparklingWater extends Water {
 
     private Bubble[] bubbles;
+    private boolean isOpened;
 
-    public SparklingWater(String color, String transparency, String smell, int temperature ){
-        super(color,transparency,smell,temperature);
+    public SparklingWater(String color, String transparency, String smell, int temperature) {
+        super(color, transparency, smell, temperature);
 
     }
-
-    public void pump(Bubble[] bubbles){
+//есть публичный метод void pump(Bubble[] bubbles), который сетает массив из пузырьков в воду
+    public void pump(Bubble[] bubbles) {
         this.bubbles = bubbles;
 
     }
-
-    public void degas(){
+//есть публичный метод void setOpened(boolean isOpened), который меняет состояние воды на "открытое"
+    public void setOpened(boolean isOpened) {
 
     }
+    //есть приватный метод void isOpened(), который в новом потоке проверят состояние воды на "открытость" и в случае,
+    // если она открыта запускает метод degas()
+    private void isOpened(){
+
+    }
+    //есть приватный метод degas(), который каждую секунду выпускает по партии пузырьков из рассчета 10 + 5 * температура_воды
+    private void degas() {
+
+    }
+
+    //есть публичный метод boolean isSparkle(), возвращающий true если в воде еще есть пузырьки газа
+    public boolean isSparkle(){
+
+        return true;
+    }
+
 }

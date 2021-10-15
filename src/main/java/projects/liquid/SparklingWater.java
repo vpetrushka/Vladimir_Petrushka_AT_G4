@@ -20,7 +20,7 @@ public class SparklingWater extends Water {
 //есть публичный метод void pump(Bubble[] bubbles), который сетает массив из пузырьков в воду
     public void pump(Bubble[] bubbles) {
         this.bubbles = bubbles;
-
+        
     }
 //есть публичный метод void setOpened(boolean isOpened), который меняет состояние воды на "открытое"
     public void setOpened(boolean isOpened) {

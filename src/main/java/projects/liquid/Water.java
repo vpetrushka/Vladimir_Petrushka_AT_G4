@@ -4,10 +4,10 @@ package projects.liquid;
 //содеждит геттеры и сеттеры ко всем полям
 public abstract class Water {
 
-    private String color;
-    private String transparency;
-    private String smell;
-    private int temperature;
+    private String color = "no";
+    private String transparency = "transparent";
+    private String smell = "no";
+    private int temperature = 0;
 
 
     public Water(String color, String transparency, String smell, int temperature){

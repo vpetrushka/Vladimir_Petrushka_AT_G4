@@ -16,7 +16,7 @@ public class Bottle {
 
     //есть публичный метод void open(), который меняет состояние воды в "открытое" (приблизительно, как this.water.setOpened(true);)
     public void open() {
-
+        this.water.setOpened(true);
     }
 
     //------ есть публичный метод void warm(int temperature), который устанавливает температуру воды в бутылке

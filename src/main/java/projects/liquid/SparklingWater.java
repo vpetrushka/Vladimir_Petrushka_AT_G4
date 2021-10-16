@@ -45,7 +45,7 @@ public class SparklingWater extends Water {
 
     //есть публичный метод boolean isSparkle(), возвращающий true если в воде еще есть пузырьки газа
     public boolean isSparkle() {
-        
+
         return true;
     }
 

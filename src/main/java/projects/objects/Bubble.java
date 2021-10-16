@@ -25,6 +25,6 @@ public class Bubble {
 
     //есть публичный метод double getVolume(), возвращающий обьем пузырьк
     public double getVolume() {
-        return 33;
+        return BUBBLE_VOLUME;
     }
 }

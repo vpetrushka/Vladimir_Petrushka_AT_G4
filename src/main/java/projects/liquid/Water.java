@@ -10,11 +10,11 @@ public abstract class Water {
     private int temperature = 0;
 
 
-    public Water(String color, String transparency, String smell, int temperature){
-    this.color = color;
-    this.transparency = transparency;
-    this.smell = smell;
-    this.temperature = temperature;
+    public Water(String color, String transparency, String smell, int temperature) {
+        this.color = color;
+        this.transparency = transparency;
+        this.smell = smell;
+        this.temperature = temperature;
     }
 
     public String getColor() {

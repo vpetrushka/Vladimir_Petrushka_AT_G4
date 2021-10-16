@@ -17,28 +17,35 @@ public class SparklingWater extends Water {
         super(color, transparency, smell, temperature);
 
     }
-//есть публичный метод void pump(Bubble[] bubbles), который сетает массив из пузырьков в воду
+
+    //есть публичный метод void pump(Bubble[] bubbles), который сетает массив из пузырьков в воду
     public void pump(Bubble[] bubbles) {
         this.bubbles = bubbles;
-        
-    }
-//есть публичный метод void setOpened(boolean isOpened), который меняет состояние воды на "открытое"
-    public void setOpened(boolean isOpened) {
 
     }
+
+    //есть публичный метод void setOpened(boolean isOpened), который меняет состояние воды на "открытое"
+    public void setOpened(boolean isOpened) {
+        this.isOpened = isOpened;
+
+    }
+
     //есть приватный метод void isOpened(), который в новом потоке проверят состояние воды на "открытость" и в случае,
     // если она открыта запускает метод degas()
-    private void isOpened(){
-
+    private void isOpened() {
+        if (isOpened == true) {
+            degas();
+        }
     }
+
     //есть приватный метод degas(), который каждую секунду выпускает по партии пузырьков из рассчета 10 + 5 * температура_воды
     private void degas() {
 
     }
 
     //есть публичный метод boolean isSparkle(), возвращающий true если в воде еще есть пузырьки газа
-    public boolean isSparkle(){
-
+    public boolean isSparkle() {
+        
         return true;
     }
 

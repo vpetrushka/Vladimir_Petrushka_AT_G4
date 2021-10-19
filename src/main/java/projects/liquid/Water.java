@@ -1,8 +1,10 @@
 package projects.liquid;
 
+import projects.objects.Transformable;
+
 //содеждит приватные поля String color = "no", String transparency = "transparent", String smell = "no", int temperature = 0
 //содеждит геттеры и сеттеры ко всем полям
-public abstract class Water {
+public abstract class Water implements Transformable {
 
     private String color = "no";
     private String transparency = "transparent";

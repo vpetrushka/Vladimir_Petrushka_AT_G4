@@ -1,16 +1,18 @@
-package projects.objects;
+package projects.objects.forliquids;
 
 import projects.liquid.SparklingWater;
-import projects.liquid.Water;
+import projects.objects.Containable;
+import projects.objects.materials.Material;
 
-public class Bottle {
+public class Bottle extends Vessel implements Containable {
 
     private SparklingWater water;
     private double volume;
 
     //содержит конструктор Bottle(double volume), в котором бутылка заполняется массивом из пузырьков из рассчета 10000 на каждый литр
-    public Bottle(double volume) {
-        this.volume = volume;
+    public Bottle(double volume, double parameter, int weight, Material material) {
+        super();
+
         double bubbleVolume = volume * 10000;
     }
 

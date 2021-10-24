@@ -22,6 +22,7 @@ public class CalculatorRunner {
             case "multiply" -> multilpy(number1, number2);
             case "divide" -> divide(number1, number2);
             default -> System.out.println("Input valid method");
+
         }
     }
 }

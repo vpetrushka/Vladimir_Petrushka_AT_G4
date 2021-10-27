@@ -22,9 +22,9 @@ public class Butterflies {
         butterflies.add("Aglais io");
         butterflies.add("Common blue");
 
-        for (String st : butterflies) {
-            System.out.println("\"" + st + "\"");
-            if (st.contains("o")) {
+        for (String butterflie : butterflies) {
+            System.out.println("\"" + butterflie + "\"");
+            if (butterflie.contains("o")) {
                 counter++;
             }
         }

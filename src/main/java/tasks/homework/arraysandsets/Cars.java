@@ -19,8 +19,8 @@ public class Cars {
         Set<String> cars = Sets.newHashSet("Мерс", "Ауди", "Жигуль", "Рено", "Жигуль", "Жигуль", "Ауди");
         BufferedWriter out = new BufferedWriter((new FileWriter("cars")));
 
-        for (String st : cars) {
-            out.write("\"" + st + "\"" + "\n");
+        for (String car : cars) {
+            out.write("\"" + car + "\"" + "\n");
         }
         out.close();
 

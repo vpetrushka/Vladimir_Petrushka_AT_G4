@@ -20,9 +20,9 @@ public class Cities {
         cities.add("Москва");
         cities.add("Берлин");
 
-        for (String st : cities) {
-            System.out.println(st);
-            charSum += st.length();
+        for (String city : cities) {
+            System.out.println(city);
+            charSum += city.length();
         }
 
         System.out.println(charSum);

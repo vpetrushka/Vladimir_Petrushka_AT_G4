@@ -20,8 +20,8 @@ public class Birds {
 
         for (String bird : birds) {
             System.out.println("--" + bird + "--");
-            String novowelsbird = bird.replaceAll("[аеёиоуыэюя]", "");
-            if ((bird.length() - novowelsbird.length()) > 1) {
+            String noVowelsBird = bird.replaceAll("[аеёиоуыэюя]", "");
+            if ((bird.length() - noVowelsBird.length()) > 1) {
                 count++;
             }
         }

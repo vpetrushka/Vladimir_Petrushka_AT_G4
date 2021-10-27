@@ -7,6 +7,7 @@ package tasks.homework.arraysandsets;
 //Проитерировать список по индексу и отпечатать пузыри (.toString()) в консоль с новой строки
 
 import tasks.homework.additionalbubble.Bubble;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -15,17 +16,17 @@ public class BubbleArray {
 
     public static void main(String[] args) {
 
-        List<Bubble> bubbleList = new ArrayList<>(Arrays.asList(new Bubble(2,"CO2"),new Bubble(4,"O2"),new Bubble(5,"CO")));
+        List<Bubble> bubbleList = new ArrayList<>(Arrays.asList(new Bubble(2, "CO2"), new Bubble(4, "O2"), new Bubble(5, "CO")));
         int volume = 0;
 
-        for ( Bubble bubble : bubbleList){
+        for (Bubble bubble : bubbleList) {
             System.out.print(bubble.getVolume() + " ");
             volume += bubble.getVolume();
         }
 
         System.out.println();
 
-        for (Bubble bubble : bubbleList){
+        for (Bubble bubble : bubbleList) {
             System.out.print(bubble.getName() + " ");
         }
 

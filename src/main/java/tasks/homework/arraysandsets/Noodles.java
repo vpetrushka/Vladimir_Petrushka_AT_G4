@@ -8,6 +8,7 @@ package tasks.homework.arraysandsets;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Noodles {
 
@@ -21,7 +22,10 @@ public class Noodles {
         noodles.add("Schezwan");
 
         for (String noodle : noodles) {
-            System.out.print(noodle + "-");
+            if (Objects.equals(noodle, noodles.get(noodles.size() - 1))) {
+                System.out.print(noodle);
+            } else
+                System.out.print(noodle + "-");
         }
 
         System.out.println();

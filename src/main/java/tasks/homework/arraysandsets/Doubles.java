@@ -16,7 +16,7 @@ public class Doubles {
 
         List<Double> doubles = new ArrayList<>(Arrays.asList(33.42, 34.3, 0.79, 2.3426, 6.8, 13.24, 5.5, 769.9));
         double sumOfDoubles = 0;
-        double sumOfFractional = 0;
+        double multiplicationsOfFractional = 0;
 
         for (double number : doubles) {
             System.out.print(number + " ");
@@ -25,12 +25,16 @@ public class Doubles {
             while (number > 1) {
                 number--;
             }
-            sumOfFractional += number;
+            if (multiplicationsOfFractional == 0) {
+                multiplicationsOfFractional = number;
+            } else {
+                multiplicationsOfFractional *= number;
+            }
         }
 
         System.out.println("\n" + sumOfDoubles);
 
-        System.out.println(sumOfFractional);
+        System.out.println(multiplicationsOfFractional);
 
         for (int i = 0; i < doubles.size(); i++) {
             System.out.print(doubles.get(i).intValue() + " ");

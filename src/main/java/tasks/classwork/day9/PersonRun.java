@@ -24,7 +24,9 @@ public class PersonRun {
 
         System.out.println(count);
 
-        long y = people.stream().filter( p -> p.getAge() > 18)
+        long y = people
+                .stream()
+                .filter( p -> p.getAge() > 18)
                 .filter( p -> (p.getAge() < 55 && p.getSex().equals(Person.Sex.WOMEN)) || p.getAge() < 60 && p.getSex().equals(Person.Sex.MAN))
                 .count();
 

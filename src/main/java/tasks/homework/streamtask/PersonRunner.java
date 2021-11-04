@@ -18,14 +18,14 @@ public class PersonRunner {
 
         RandomStringArray randomStringArray = new RandomStringArray();
 
-        List<String> collect = Stream.generate(() -> new Person(randomStringArray.randomString(), randomStringArray.randomString(), ThreadLocalRandom.current().nextInt(15,30) )).
-                limit(100).
-                filter(p -> p.getAge() < 21).
-                peek(person -> System.out.println(person.getName() + " " + person.getSurname())).
-                sorted(Comparator.comparing(Person::getSurname).thenComparing(Person::getName)).
-                limit(4).
-                map(Person::getName).
-                collect(Collectors.toList());
+        List<String> collect = Stream.generate(() -> new Person(randomStringArray.randomString(), randomStringArray.randomString(), ThreadLocalRandom.current().nextInt(15, 30)))
+                .limit(100)
+                .filter(p -> p.getAge() < 21)
+                .peek(person -> System.out.println(person.getName() + " " + person.getSurname()))
+                .sorted(Comparator.comparing(Person::getSurname).thenComparing(Person::getName))
+                .limit(4)
+                .map(Person::getName)
+                .collect(Collectors.toList());
 
         System.out.println(collect);
     }

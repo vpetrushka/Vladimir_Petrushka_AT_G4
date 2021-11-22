@@ -1,4 +1,4 @@
-package projects.objects;
+package projects.stuff;
 
 public class Bubble {
 

@@ -1,4 +1,4 @@
-package projects.objects.forliquids;
+package projects.vessel;
 
 import projects.objects.materials.Material;
 
@@ -14,6 +14,7 @@ public abstract class Vessel {
         this.parameter = parameter;
         this.weight = weight;
         this.material = material;
+        this.weight = (int) (material.getDensity() * volume / 4);
     }
 
     public double getVolume() {

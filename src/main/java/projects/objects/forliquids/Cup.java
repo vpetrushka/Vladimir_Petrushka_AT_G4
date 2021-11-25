@@ -1,6 +1,7 @@
 package projects.objects.forliquids;
 
-import projects.objects.Containable;
+import projects.vessel.Containable;
+import projects.vessel.Vessel;
 
 public class Cup extends Vessel implements Containable {
 }

@@ -1,7 +1,15 @@
 package projects.objects.materials;
 
-import projects.objects.Transformable;
+import projects.stuff.Transformable;
 
 public class Sand implements Transformable {
+    void mix(){
+
+    }
+
+    void setOpened(){
+
+    }
+
 
 }

@@ -1,8 +1,9 @@
-package projects.objects.forliquids;
+package projects.vessel;
 
-import projects.liquid.SparklingWater;
-import projects.objects.Containable;
+import projects.stuff.SparklingWater;
+import projects.stuff.Transformable;
 import projects.objects.materials.Material;
+
 
 public class Bottle extends Vessel implements Containable {
 
@@ -12,21 +13,42 @@ public class Bottle extends Vessel implements Containable {
     //содержит конструктор Bottle(double volume), в котором бутылка заполняется массивом из пузырьков из рассчета 10000 на каждый литр
     public Bottle(double volume, double parameter, int weight, Material material) {
         super();
-
         double bubbleVolume = volume * 10000;
     }
 
-    //есть публичный метод void open(), который меняет состояние воды в "открытое" (приблизительно, как this.water.setOpened(true);)
+    @Override
+    public void addStuff(Transformable stuff) {
+
+    }
+
+    @Override
+    public Transformable removeStuff() {
+        return null;
+    }
+
+    @Override
+    public boolean isEmpty() {
+        return false;
+    }
+
+    @Override
+    public int getFreeSpace() {
+        return 0;
+    }
+
     public void open() {
         this.water.setOpened(true);
     }
 
-    //------ есть публичный метод void warm(int temperature), который устанавливает температуру воды в бутылке
+    @Override
+    public void close() {
+        this.water.setOpened(false);
+    }
+
     public void warm(int temperature) {
         water.setTemperature(temperature);
     }
 
-    //------ есть публичный метод SparklingWater getWater() возвращающий обьект воды
     public SparklingWater getWater() {
 
         return new SparklingWater(water.getColor(), water.getTransparency(), water.getSmell(), water.getTemperature());

@@ -10,11 +10,11 @@ public class MathProblems {
 
     public static void main(String[] args) throws ParseException {
 
-//        float x = 0.3F + 0.4F;
-//
-//        System.out.println(x);
-//
-//        MathProblems mathProblems = new MathProblems();
+        float x = 0.3F + 0.4F;
+
+        System.out.println(x);
+
+        MathProblems mathProblems = new MathProblems();
 //
 //        String a = "76";
 //
@@ -32,21 +32,21 @@ public class MathProblems {
 //        System.out.println(s.length());
 //        System.out.println(System.currentTimeMillis() - t1);
 
-        compare(null);
-
-        DateFormat dateFormat = new SimpleDateFormat("dd.MMMM.yyyy");
-//        Date date = dateFormat.parse("04.06.2012");
-        String text = dateFormat.format(new Date());
-
-//        System.out.println(date);
-        System.out.println(text);
-
-    }
-        private static void compare(String s){
-
-            System.out.println("mama".equals(s));
-
-
+//        compare(null);
+//
+//        DateFormat dateFormat = new SimpleDateFormat("dd.MMMM.yyyy");
+////        Date date = dateFormat.parse("04.06.2012");
+//        String text = dateFormat.format(new Date());
+//
+////        System.out.println(date);
+//        System.out.println(text);
+//
+//    }
+//        private static void compare(String s){
+//
+//            System.out.println("mama".equals(s));
+//
+//
         }
 
 

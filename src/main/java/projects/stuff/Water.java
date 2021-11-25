@@ -1,6 +1,6 @@
-package projects.liquid;
+package projects.stuff;
 
-import projects.objects.Transformable;
+import projects.stuff.Transformable;
 
 //содеждит приватные поля String color = "no", String transparency = "transparent", String smell = "no", int temperature = 0
 //содеждит геттеры и сеттеры ко всем полям

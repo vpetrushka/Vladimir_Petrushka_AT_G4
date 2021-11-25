@@ -1,4 +1,4 @@
-package projects.liquid;
+package projects.stuff;
 
 //- создать класс SparklingWater, являющийся дочерним Water
 //- у газировки есть пузырьки
@@ -6,7 +6,8 @@ package projects.liquid;
 //- 1 литр воды содержит 10 тыс пузырьков
 //- у газировки есть метод degas(), который удаляет пузырьки по одному и вызывает их лопанье
 
-import projects.objects.Bubble;
+import projects.stuff.Bubble;
+import projects.stuff.Water;
 
 public class SparklingWater extends Water {
 
@@ -49,4 +50,13 @@ public class SparklingWater extends Water {
         return true;
     }
 
+
+    public void mix() {
+
+    }
+
+
+    public void setOpened() {
+
+    }
 }

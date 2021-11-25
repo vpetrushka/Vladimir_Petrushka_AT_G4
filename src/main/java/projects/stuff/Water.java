@@ -19,6 +19,16 @@ public abstract class Water implements Transformable {
         this.temperature = temperature;
     }
 
+    @Override
+    public void mix() {
+
+    }
+
+    @Override
+    public void setOpened() {
+
+    }
+
     public String getColor() {
         return color;
     }

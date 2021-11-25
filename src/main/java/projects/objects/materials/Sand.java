@@ -3,13 +3,18 @@ package projects.objects.materials;
 import projects.stuff.Transformable;
 
 public class Sand implements Transformable {
-    void mix(){
+    @Override
+    public void mix() {
 
     }
 
-    void setOpened(){
+    @Override
+    public void setOpened() {
 
     }
 
+    @Override
+    public void setTemperature(int temperature) {
 
+    }
 }

@@ -9,8 +9,8 @@ public class Bottle extends Vessel implements Containable {
 
     private SparklingWater water;
     private double volume;
+    private final double BOTTLEDIAMETER = 2.0;
 
-    //содержит конструктор Bottle(double volume), в котором бутылка заполняется массивом из пузырьков из рассчета 10000 на каждый литр
     public Bottle(double volume, double parameter, int weight, Material material) {
         super();
         double bubbleVolume = volume * 10000;
@@ -54,9 +54,8 @@ public class Bottle extends Vessel implements Containable {
         return new SparklingWater(water.getColor(), water.getTransparency(), water.getSmell(), water.getTemperature());
     }
 
-    //есть публичный метод setWater(SparklingWater water) добавляющий новый обьект воды
     public SparklingWater setWater(SparklingWater water) {
-        return new SparklingWater(water.getColor(), "2", "3", 330);
+        return new SparklingWater(water.getColor(), water.getTransparency(), water.getSmell(), water.getTemperature());
     }
 
 }

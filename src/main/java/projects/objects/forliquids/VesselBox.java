@@ -1,6 +1,8 @@
 package projects.objects.forliquids;
 
-public class VesselBox<T> extends Vessel{
+import projects.vessel.Vessel;
+
+public class VesselBox<T> extends Vessel {
 
 
 

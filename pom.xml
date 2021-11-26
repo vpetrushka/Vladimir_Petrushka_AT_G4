@@ -24,7 +24,7 @@
                 <configuration>
                     <includes>
                         <include>
-                            EngineerTest
+                            RectangleTest
                         </include>
                     </includes>
                 </configuration>

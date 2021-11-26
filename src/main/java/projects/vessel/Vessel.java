@@ -9,7 +9,7 @@ public abstract class Vessel {
     private int weight;
     private Material material;
 
-    public Vessel() {
+    public Vessel(double volume, double parameter, int weight, Material material) {
         this.volume = volume;
         this.parameter = parameter;
         this.weight = weight;

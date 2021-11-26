@@ -12,7 +12,7 @@ public class Bottle extends Vessel implements Containable {
     private final double BOTTLEDIAMETER = 2.0;
 
     public Bottle(double volume, double parameter, int weight, Material material) {
-        super();
+        super(volume,parameter,weight,material);
         double bubbleVolume = volume * 10000;
     }
 

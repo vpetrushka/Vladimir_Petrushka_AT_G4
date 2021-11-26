@@ -41,12 +41,12 @@ public class BottleTest {
 
     @Test
     public void bottleGetVolumeTest() {
-        Assert.assertEquals( volume, vessel.getVolume(),0.0);
+        Assert.assertEquals(volume, vessel.getVolume(), 0.0);
     }
 
     @Test
     public void bottleGetParameterTest() {
-        Assert.assertEquals("Expected parameter is incorrect", parameter, vessel.getParameter());
+        Assert.assertEquals(parameter, vessel.getParameter(), 0.0);
     }
 
 

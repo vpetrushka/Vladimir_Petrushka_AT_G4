@@ -24,7 +24,6 @@
                 <configuration>
                     <includes>
                         <include>
-                            BottleTest
                         </include>
                     </includes>
                 </configuration>

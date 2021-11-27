@@ -34,36 +34,36 @@ public class BottleTest {
 
         return
                 Arrays.asList(new Object[][]{
-                        {new Bottle(10.0, 15.0, Material.GLASS), 10, 15, 5500, Material.GLASS, 25000},
-//                        {new Bottle(10.0,15.0, 25, new Plastic())}
+                        {new Bottle(10.0, 15.0, Material.GLASS), 10, 15, 5500, Material.GLASS, 100000},
+                        {new Bottle(22.5,33.3, Material.PLASTIC),22.5,33.3,10125,Material.PLASTIC,225000}
                 });
     }
 
     @Test
     public void vesselGetVolumeTest() {
-        Assert.assertEquals(volume, vessel.getVolume(), 0.0);
+        Assert.assertEquals("Volume is incorrect",volume, vessel.getVolume(),0.0);
     }
 
     @Test
     public void vesselGetParameterTest() {
-        Assert.assertEquals(parameter, vessel.getParameter(), 0.0);
+        Assert.assertEquals("Parameter is incorrect",parameter, vessel.getParameter(), 0.0);
     }
 
     @Test
     public void vesselGetWeightTest() {
-        Assert.assertEquals(weight, vessel.getWeight(), 0.0);
+        Assert.assertEquals("Weight is incorrect", weight, vessel.getWeight(),0.0);
     }
 
     @Test
     public void vesselSetVolumeTest() {
         vessel.setVolume(35.5);
-        Assert.assertEquals(35.5, vessel.getVolume(), 0.0);
+        Assert.assertEquals("Volume is incorrect",35.5, vessel.getVolume(), 0.0);
     }
 
     @Test
     public void vesselSetParameterTest() {
         vessel.setParameter(35.5);
-        Assert.assertEquals(35.5, vessel.getParameter(), 0.0);
+        Assert.assertEquals("Parameter is incorrect",35.5, vessel.getParameter(), 0.0);
     }
 
     @Test

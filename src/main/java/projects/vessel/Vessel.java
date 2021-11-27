@@ -6,7 +6,6 @@ public abstract class Vessel {
 
     private double volume;
     private double parameter;
-    private int weight;
     private Material material;
 
     public Vessel(double volume, double parameter, Material material) {
@@ -32,8 +31,7 @@ public abstract class Vessel {
     }
 
     public int getWeight() {
-        weight = (int) (material.getDensity() * volume / 4);
-        return weight;
+        return (int) (material.getDensity() * volume / 4);
     }
 
     public Material getMaterial() {

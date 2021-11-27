@@ -2,23 +2,21 @@ package projects.vessel;
 
 import projects.stuff.SparklingWater;
 import projects.stuff.Transformable;
-import projects.objects.materials.Material;
+import projects.material.Material;
 
 
 public class Bottle extends Vessel implements Containable {
 
     private SparklingWater water;
-    private double volume;
     private final double BOTTLEDIAMETER = 2.0;
 
-    public Bottle(double volume, double parameter, int weight, Material material) {
-        super(volume,parameter,weight,material);
+    public Bottle(double volume, double parameter, Material material) {
+        super(volume,parameter,material);
         double bubbleVolume = volume * 10000;
     }
 
     @Override
     public void addStuff(Transformable stuff) {
-
     }
 
     @Override
@@ -50,7 +48,6 @@ public class Bottle extends Vessel implements Containable {
     }
 
     public SparklingWater getWater() {
-
         return new SparklingWater(water.getColor(), water.getTransparency(), water.getSmell(), water.getTemperature());
     }
 

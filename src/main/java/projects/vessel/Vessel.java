@@ -1,6 +1,6 @@
 package projects.vessel;
 
-import projects.objects.materials.Material;
+import projects.material.Material;
 
 public abstract class Vessel {
 
@@ -9,12 +9,10 @@ public abstract class Vessel {
     private int weight;
     private Material material;
 
-    public Vessel(double volume, double parameter, int weight, Material material) {
+    public Vessel(double volume, double parameter, Material material) {
         this.volume = volume;
         this.parameter = parameter;
-        this.weight = weight;
         this.material = material;
-        this.weight = (int) (material.getDensity() * volume / 4);
     }
 
     public double getVolume() {
@@ -34,11 +32,8 @@ public abstract class Vessel {
     }
 
     public int getWeight() {
+        weight = (int) (material.getDensity() * volume / 4);
         return weight;
-    }
-
-    public void setWeight(int weight) {
-        this.weight = weight;
     }
 
     public Material getMaterial() {

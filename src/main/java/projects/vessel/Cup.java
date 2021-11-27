@@ -1,13 +1,11 @@
 package projects.vessel;
 
-import projects.objects.materials.Material;
+import projects.material.Material;
 import projects.stuff.Transformable;
-import projects.vessel.Containable;
-import projects.vessel.Vessel;
 
 public class Cup extends Vessel implements Containable {
-    public Cup(double volume, double parameter, int weight, Material material) {
-        super(volume, parameter, weight, material);
+    public Cup(double volume, double parameter, Material material) {
+        super(volume, parameter, material);
     }
 
     @Override

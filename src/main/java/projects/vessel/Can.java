@@ -1,9 +1,14 @@
 package projects.vessel;
 
+import projects.material.Material;
 import projects.stuff.Transformable;
 
 
 public class Can extends Vessel implements Containable {
+
+    public Can(double volume, double parameter, Material material) {
+        super(volume, parameter, material);
+    }
 
     @Override
     public void addStuff(Transformable stuff) {

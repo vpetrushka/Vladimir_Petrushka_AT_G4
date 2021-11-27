@@ -24,7 +24,6 @@
                 <configuration>
                     <includes>
                         <include>
-                            RectangleTest
                         </include>
                     </includes>
                 </configuration>

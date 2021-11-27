@@ -2,29 +2,30 @@ package projects.material;
 
 public enum Material {
 
-    GLASS, PLASTIC, METAL;
+    GLASS(0.017, "green", 2200),
+    PLASTIC(0.2, "white", 1800),
+    METAL(58.0, "silver", 7800);
 
     private double thermalConductivity;
     private String color;
     private double density;
 
-    private void Glass() {
-        this.thermalConductivity = 0.017;
-        this.color = "green";
-        this.density = 2200;
+    private Material(double thermalConductivity, String color, double density) {
+        this.thermalConductivity = thermalConductivity;
+        this.color = color;
+        this.density = density;
     }
 
-    private void Plastic() {
-        this.thermalConductivity = 0.2;
-        this.color = "white";
-        this.density = 1800;
+    public double getThermalConductivity() {
+        return thermalConductivity;
     }
 
-    private void Metal() {
-        this.thermalConductivity = 58.0;
-        this.color = "silver";
-        this.density = 7800;
+    public String getColor() {
+        return color;
     }
 
+    public double getDensity() {
+        return density;
+    }
 }
 

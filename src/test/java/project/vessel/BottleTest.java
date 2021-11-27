@@ -55,20 +55,15 @@ public class BottleTest {
     }
 
     @Test
-    public void vesselGetMaterialTest() {
-        Assert.assertEquals("Material does not match", material, vessel.getMaterial());
-    }
-
-    @Test
     public void vesselSetVolumeTest() {
         vessel.setVolume(35.5);
-        Assert.assertEquals( 35.5, vessel.getVolume(), 0.0);
+        Assert.assertEquals(35.5, vessel.getVolume(), 0.0);
     }
 
     @Test
     public void vesselSetParameterTest() {
         vessel.setParameter(35.5);
-        Assert.assertEquals( 35.5, vessel.getParameter(), 0.0);
+        Assert.assertEquals(35.5, vessel.getParameter(), 0.0);
     }
 
     @Test
@@ -77,5 +72,9 @@ public class BottleTest {
         Assert.assertEquals("Material does not match", Material.PLASTIC, vessel.getMaterial());
     }
 
+    @Test
+    public void vesselGetMaterialTest() {
+        Assert.assertEquals("Material does not match", material, vessel.getMaterial());
+    }
 
 }

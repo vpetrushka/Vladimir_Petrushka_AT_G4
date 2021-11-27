@@ -24,7 +24,6 @@
                 <configuration>
                     <includes>
                         <include>
-                            EngineerTest
                             BottleTest
                         </include>
                     </includes>

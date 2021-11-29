@@ -2,8 +2,8 @@ package tasks.classwork.day2;
 
 public class Glass {
 
-    private int fullVolume;
-    private String colour;
+    private final int fullVolume;
+    private final String colour;
     private boolean isEmpty = true;
     private int effectiveVolume;
 

@@ -2,8 +2,8 @@ package tasks.homework.threadtask;
 
 public class Hedgehog {
 
-    private String pattern = "Hedgehog <%d>";
-    private String name;
+    private final String pattern = "Hedgehog <%d>";
+    private final String name;
 
     public Hedgehog(int number){
         this.name = String.format(pattern + number);

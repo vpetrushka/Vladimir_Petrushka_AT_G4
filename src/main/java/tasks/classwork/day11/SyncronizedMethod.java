@@ -6,7 +6,7 @@ public class SyncronizedMethod {
 
         for (int i = 0; i < 3; i++) {
             try {
-                Thread.currentThread().sleep(1000);
+                Thread.sleep(1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

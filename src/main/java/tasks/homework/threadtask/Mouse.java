@@ -2,8 +2,8 @@ package tasks.homework.threadtask;
 
 public class Mouse {
 
-    private String pattern = "Mouse <%d>";
-    private String name;
+    private final String pattern = "Mouse <%d>";
+    private final String name;
 
     public Mouse(int number){
         this.name = String.format(pattern, number);

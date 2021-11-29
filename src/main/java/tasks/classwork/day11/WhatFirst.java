@@ -11,7 +11,7 @@ public class WhatFirst {
                 for (int i = 0; i < 3; i++) {
 
                     try {
-                        Thread.currentThread().sleep(1000);
+                        Thread.sleep(1000);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
@@ -24,7 +24,7 @@ public class WhatFirst {
 
         synchronized (lock) {
             for (int i = 0; i < 3; i++) {
-                Thread.currentThread().sleep(1000);
+                Thread.sleep(1000);
                 System.out.printf("m - %s\r\n", i);
             }
         }

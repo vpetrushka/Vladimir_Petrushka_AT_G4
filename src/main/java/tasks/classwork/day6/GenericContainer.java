@@ -2,7 +2,7 @@ package tasks.classwork.day6;
 
 public class GenericContainer<T> {
 
-    private T[] objects;
+    private final T[] objects;
     private int freePlaceNumber;
 
     public GenericContainer() {

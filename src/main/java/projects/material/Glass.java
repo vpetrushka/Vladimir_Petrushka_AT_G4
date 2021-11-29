@@ -4,9 +4,9 @@ import projects.objects.materials.Material;
 
 public class Glass extends Material {
 
-    private double thermalConductivity;
-    private String color;
-    private double density;
+    private final double thermalConductivity;
+    private final String color;
+    private final double density;
 
     public Glass() {
         thermalConductivity = 0.017;

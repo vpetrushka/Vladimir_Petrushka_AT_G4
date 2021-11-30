@@ -15,6 +15,7 @@
 //a[@href = '/contacts/']/parent::*/div/div/a[@href = '/contacts/affiliates/']
 
 //footer/div/div/div/ul/li/a[@href='/about_us/']/span
+//span[contains(text(),'О компании') and ancestor::footer]
 
 //div[@class = 'social-block']/ul/li/a[@href = 'https://vk.com/spartakby']
 //div[@class = 'social-block']/ul/li/a/img[@src='/bitrix/templates/our_shop/images/VK.svg']/ancestor::a

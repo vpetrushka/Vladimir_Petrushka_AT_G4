@@ -1,17 +1,13 @@
 package project.gui.booking;
 
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 
 public class DateChecker {
 
-    @Test
     public static boolean checkForDate(String date) {
 
         WebDriver driver = new ChromeDriver();
@@ -24,16 +20,4 @@ public class DateChecker {
         driver.quit();
         return Integer.parseInt(value.replaceAll(",", "")) > 0;
     }
-
-    public static void main(String[] args) {
-
-    }
 }
-
-
-
-
-
-
-
-

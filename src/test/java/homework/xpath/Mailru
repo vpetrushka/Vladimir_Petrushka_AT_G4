@@ -1,0 +1,27 @@
+//a[contains(text(),'Мой Мир')]
+//div[@id = 'ph-whiteline']/div/div/a[contains(text(),'Мой Мир')]
+//div[contains(text(),'Все проекты')]
+//a[@data-name = 'pictures']
+//div[@id= 'search__categories']/a[contains(text(),'Картинки')]
+//a[contains(text(),'Регистрация')]
+//button[contains(text(),'Войти')]/parent::div/a
+//label[@for='q'][1]
+//form[@id='search']/label[not(contains(@data-testid, 'search-clear'))]
+//button[@id = 'search:submit']
+//button[contains(text(),'Найти')]
+//a[@title = 'Облако']/*/*
+//a[@data-testid = 'mailbox-head-cloud-icon']
+//button[@data-testid = 'enter-password']
+//button[contains(text(),'Ввести пароль')]
+//a[contains(.,'Создать почту')]
+//a[@data-testid = 'mailbox-create-link']
+//div[contains(text(),'Одноклассники')]
+//img[@title = 'Одноклассники']/ancestor::a
+//ul[@data-testid = 'news-content']/li[3]
+//li[@data-testid = 'general-news-item'][3]
+//select
+//select[@name = 'domain']
+//a[@data-testid = 'rates-item'][2]
+//i[contains(@class, 'rub')]/ancestor::a
+//a[contains(text(),'Леди')]
+//a[@data-testid = 'news-tabs-tab-item-lady']

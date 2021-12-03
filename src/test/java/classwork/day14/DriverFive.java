@@ -1,4 +1,4 @@
-package project.classwork.day14;
+package classwork.day14;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

@@ -1,0 +1,16 @@
+//a[@class='header_logo_img']/img
+//img[@title = 'Спартак']
+//a[@href = '/partners/' and @class='has_child']/child::span
+//span[contains(.,'Информация для партнеров')]/ancestor::a[@class = 'has_child']
+//a[@href = '/cn/']
+//a[contains(text(),'Ch')]
+//img[@src = '/bitrix/templates/our_shop/images/Quality.png'][1]
+//div[@class = 'banner_quality'][1]/img
+//a[contains(text(),'Представительства и филиалы')]
+//a[@href = '/contacts/']/parent::*/div/div/a[@href = '/contacts/affiliates/']
+//footer/div/div/div/ul/li/a[@href='/about_us/']/span
+//span[contains(text(),'О компании') and ancestor::footer]
+//div[@class = 'social-block']/ul/li/a[@href = 'https://vk.com/spartakby']
+//div[@class = 'social-block']/ul/li/a/img[@src='/bitrix/templates/our_shop/images/VK.svg']/ancestor::a
+//div[@class = 'social-block']/ul/li/a[@href = 'https://www.youtube.com/channel/UC2xYusMBxs4XkwoPotvTw4A']
+//div[@class = 'social-block']/ul/li/a/img[@src='/bitrix/templates/our_shop/images/youtube.svg']/ancestor::a

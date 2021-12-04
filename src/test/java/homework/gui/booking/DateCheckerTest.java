@@ -1,4 +1,4 @@
-package project.gui.booking;
+package homework.gui.booking;
 
 import org.junit.Assert;
 import org.junit.Test;

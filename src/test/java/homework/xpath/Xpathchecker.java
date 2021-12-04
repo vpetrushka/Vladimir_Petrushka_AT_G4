@@ -27,9 +27,8 @@ public class Xpathchecker {
         }
         in.close();
 
-        BufferedReader in = new BufferedReader(new FileReader("src/test/java/homework/xpath/Mailru"));
-        String line;
-        while ((line = in.readLine()) != null) {
+        BufferedReader in2 = new BufferedReader(new FileReader("src/test/java/homework/xpath/Mailru"));
+        while ((line = in2.readLine()) != null) {
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--start-fullscreen");
             WebDriver driver = new ChromeDriver(options);

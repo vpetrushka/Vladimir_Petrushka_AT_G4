@@ -56,7 +56,7 @@ public class DateCheckerTest {
         driver.findElement(By.xpath("//input[@type = 'search']")).sendKeys("Москва");
         driver.findElement(By.xpath("//button[@data-sb-id='main']")).click();
         driver.findElement(By.xpath(String.format("//td[@data-date = '%s']", date))).click();
-        driver.findElement(By.xpath("//div[@id = 'searchboxInc']/div/div/div/div/div[@data-filters-group = 'review_score']/div[contains(@data-filters-item,'90')]")).click();
+        driver.findElement(By.xpath("//div[@id = 'searchboxInc']//div[@data-filters-group = 'review_score']/div[contains(@data-filters-item,'90')]")).click();
         try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {

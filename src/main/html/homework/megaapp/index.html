@@ -1,17 +1,40 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-        "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta    http-equiv="Content-Type" content="text/html; charset=utf-8" >
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <script type="type=text/javascript" src="hidevalue.js"></script>
-    <script type="type=text/javascript" src="setvalue.js"></script>
-    <style type="text-align: center">
-
-    </style>
-    <title>Main Page</title>
+    <meta  http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Main page</title>
+    <link rel="icon" href="snowflake.ico" type="image/x-icon">
+    <script>
+        let global = null;
+        function hideValue(x){
+            global = x.value;
+            x.value = "";
+        }
+        function setValue(x){
+            x.value = global;
+        }
+    </script>
+    <link href="mystyle.css" rel="stylesheet">
 </head>
 <body>
+<H1>
+    "Welcome"
+</H1>
+
+<form action="about.html" method="get">
+    <input id="about" type="submit" value="About Us"  onmouseover="hideValue(this)" onmouseout="setValue(this)" >
+</form>
+<form action="1.html" method="get">
+    <input id="regis" type="submit" value="Check Registration"  onmouseover="hideValue(this)" onmouseout="setValue(this)">
+</form>
+<form action="media.html" method="get">
+    <input id="media" type="submit" value="Get Media"  onmouseover="hideValue(this)" onmouseout="setValue(this)">
+</form>
+
+<br>
+<br>
+
+<p>"This is just a dummy site (c)"</p>
 
 </body>
 </html>

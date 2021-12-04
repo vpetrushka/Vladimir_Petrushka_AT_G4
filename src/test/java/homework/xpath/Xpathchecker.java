@@ -38,6 +38,6 @@ public class Xpathchecker {
             driver.close();
             driver.quit();
         }
-        in.close();
+        in2.close();
     }
 }

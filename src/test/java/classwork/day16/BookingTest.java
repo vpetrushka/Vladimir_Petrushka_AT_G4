@@ -1,23 +1,28 @@
 package classwork.day16;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.sql.Time;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
+import java.util.concurrent.TimeUnit;
 
 public class BookingTest {
+
+    WebDriver driver = new ChromeDriver();
 
     @Test
     public void checkForDateTest() {
 
-        WebDriver driver = new ChromeDriver();
         String dateIn = LocalDate.now().plusDays(3).format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
         String dateOut = LocalDate.now().plusDays(10).format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
 
@@ -51,5 +56,6 @@ public class BookingTest {
 
         driver.close();
         driver.quit();
+
     }
 }
